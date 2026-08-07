@@ -1,0 +1,324 @@
+
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=5, viewport-fit=cover">
+  <meta name="format-detection" content="telephone=no">
+
+  <title>Shein Codes – Claim Your Gift Card</title>
+
+  <!-- TikTok Pixel -->
+  <script>
+  !function (w, d, t) {
+    w.TiktokAnalyticsObject=t;var ttq=w[t]=w[t]||[];ttq.methods=["page","track","identify","instances","debug","on","off","once","ready","alias","group","enableCookie","disableCookie","holdConsent","revokeConsent","grantConsent"],ttq.setAndDefer=function(t,e){t[e]=function(){t.push([e].concat(Array.prototype.slice.call(arguments,0)))}};for(var i=0;i<ttq.methods.length;i++)ttq.setAndDefer(ttq,ttq.methods[i]);ttq.instance=function(t){for(var e=ttq._i[t]||[],n=0;n<ttq.methods.length;n++)ttq.setAndDefer(e,ttq.methods[n]);return e},ttq.load=function(e,n){var r="https://analytics.tiktok.com/i18n/pixel/events.js",o=n&&n.partner;ttq._i=ttq._i||{},ttq._i[e]=[],ttq._i[e]._u=r,ttq._t=ttq._t||{},ttq._t[e]=+new Date,ttq._o=ttq._o||{},ttq._o[e]=n||{};n=document.createElement("script");n.type="text/javascript",n.async=!0,n.src=r+"?sdkid="+e+"&lib="+t;e=document.getElementsByTagName("script")[0];e.parentNode.insertBefore(n,e)};
+    ttq.load('D4DO8HRC77UCI3HO4RHG');
+    ttq.page();
+  }(window, document, 'ttq');
+  </script>
+
+  <style>
+    :root {
+      --bg:      #ffffff;
+      --surface: #f4f4f5;
+      --primary: #0a0a0a;
+      --primary2:#000000;
+      --text:    #171717;
+      --muted:   #6b6b6b;
+      --muted2:  #b3b3b3;
+      --green:   #1a7a3c;
+    }
+
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+    html, body {
+      height: 100%;
+      background: var(--bg);
+      font-family: system-ui, -apple-system, sans-serif;
+      color: var(--text);
+      overflow-x: hidden;
+      overscroll-behavior: none;
+      -webkit-text-size-adjust: 100%;
+      -webkit-tap-highlight-color: transparent;
+    }
+
+    .bg-layer { position: fixed; inset: 0; z-index: 0; pointer-events: none; overflow: hidden; }
+    .bg-layer::before {
+      content: ''; position: absolute; inset: 0;
+      background:
+        radial-gradient(ellipse 80% 50% at 20% -10%, rgba(0,0,0,.06) 0%, transparent 60%),
+        radial-gradient(ellipse 60% 40% at 80% 110%, rgba(0,0,0,.04) 0%, transparent 55%);
+    }
+
+    .particle { position: absolute; border-radius: 50%; opacity: 0; animation: rise linear infinite; }
+    @keyframes rise {
+      0%   { transform: translateY(0) scale(1);   opacity: .3; }
+      100% { transform: translateY(-110vh) scale(.3); opacity: 0; }
+    }
+
+    .page {
+      position: relative; z-index: 1;
+      min-height: 100dvh;
+      display: flex; flex-direction: column; align-items: center;
+      padding: 40px 20px 100px;
+    }
+    .inner { width: 100%; max-width: 400px; display: flex; flex-direction: column; align-items: center; }
+
+    /* LOGO */
+    .wordmark { display: flex; align-items: center; justify-content: center; margin-bottom: 20px; animation: fadeUp .5s ease both; }
+    .logo-icon { width: 90px; height: 90px; border-radius: 20px; overflow: hidden; flex-shrink: 0; }
+    .logo-icon img { width: 100%; height: 100%; object-fit: cover; display: block; }
+
+    /* HERO */
+    .hero { text-align: center; margin-bottom: 16px; animation: fadeUp .55s .05s ease both; width: 100%; }
+    .hero h1 { font-size: 2rem; font-weight: 900; line-height: 1.1; color: var(--text); }
+    .hero h1 .hl { color: var(--primary); }
+    .hero p { margin-top: 7px; font-size: .9rem; color: var(--muted); }
+    .badge { display: inline-flex; align-items: center; gap: 6px; margin-top: 10px; background: rgba(0,0,0,.07); border: 1px solid rgba(0,0,0,.22); border-radius: 999px; padding: 5px 14px; font-size: .73rem; font-weight: 700; color: var(--primary); }
+    .badge svg { width: 12px; height: 12px; flex-shrink: 0; }
+
+    /* VALUE COUNTER */
+    .value-counter { width: 100%; background: var(--surface); border: 1px solid rgba(0,0,0,.18); border-radius: 18px; padding: 22px 20px 18px; text-align: center; margin-bottom: 4px; animation: fadeUp .58s .08s ease both; box-shadow: 0 4px 20px rgba(0,0,0,.07); }
+    .counter-amount { font-size: 3.2rem; font-weight: 900; color: var(--primary); line-height: 1; letter-spacing: -.02em; font-variant-numeric: tabular-nums; }
+    .counter-label { font-size: .8rem; font-weight: 700; color: var(--muted); margin-top: 4px; }
+    .counter-bar-wrap { width: 100%; height: 6px; background: rgba(0,0,0,.15); border-radius: 99px; margin-top: 14px; overflow: hidden; }
+    .counter-bar { height: 100%; width: 0%; background: linear-gradient(90deg, #404040, var(--primary)); border-radius: 99px; transition: width 2s cubic-bezier(.1,.9,.2,1); }
+
+    /* CTA */
+    .cta-btn {
+      width: 100%; margin: 14px 0 10px; padding: 17px;
+      background: var(--primary); border: none; border-radius: 14px;
+      font-size: 1.08rem; font-weight: 800; color: #fff; cursor: pointer;
+      box-shadow: 0 6px 24px rgba(0,0,0,.3);
+      transition: transform .15s, box-shadow .15s;
+      animation: fadeUp .6s .1s ease both, cta-pulse 3s 1s ease-in-out infinite;
+      display: block; text-decoration: none; text-align: center; line-height: normal;
+      touch-action: manipulation; -webkit-appearance: none; letter-spacing: .01em;
+    }
+    @keyframes cta-pulse {
+      0%,100% { box-shadow: 0 6px 24px rgba(0,0,0,.3); }
+      50%      { box-shadow: 0 8px 36px rgba(0,0,0,.5); }
+    }
+    .cta-btn:active { transform: scale(.97); }
+
+    /* TRUST */
+    .trust { display: flex; align-items: center; justify-content: center; gap: 16px; font-size: .71rem; color: var(--muted); margin-bottom: 18px; animation: fadeUp .6s .15s ease both; }
+    .trust span::before { content: '✓ '; color: var(--primary); font-weight: 700; }
+
+    /* STEPS */
+    .steps-card { width: 100%; background: var(--surface); border: 1px solid rgba(0,0,0,.15); border-radius: 20px; overflow: hidden; box-shadow: 0 8px 32px rgba(0,0,0,.08); margin-bottom: 18px; animation: fadeUp .65s .2s ease both; }
+    .steps-title { font-size: .68rem; font-weight: 700; text-align: center; color: var(--muted); text-transform: uppercase; letter-spacing: 1px; padding: 16px 0; border-bottom: 1px solid rgba(0,0,0,.1); }
+    .step-item { display: flex; align-items: flex-start; gap: 14px; padding: 16px 20px; border-bottom: 1px solid rgba(0,0,0,.08); }
+    .step-item:last-child { border-bottom: none; }
+    .step-num { width: 26px; height: 26px; border-radius: 50%; background: var(--primary); display: flex; align-items: center; justify-content: center; font-size: .82rem; font-weight: 800; color: #fff; flex-shrink: 0; box-shadow: 0 0 10px rgba(0,0,0,.3); }
+    .step-body { flex: 1; text-align: left; }
+    .step-body b { display: block; font-size: .9rem; font-weight: 700; color: var(--text); margin-bottom: 2px; }
+    .step-body span { font-size: .76rem; color: var(--muted); line-height: 1.4; }
+
+    /* BANNER */
+    .challenge-banner { width: 100%; background: var(--surface); border: 1px solid rgba(0,0,0,.22); border-radius: 16px; padding: 14px 16px; display: flex; align-items: center; gap: 12px; margin-bottom: 18px; position: relative; overflow: hidden; animation: fadeUp .68s .22s ease both; }
+    .ch-badge { position: absolute; top: -1px; right: -1px; background: var(--primary); border-radius: 0 16px 0 10px; padding: 4px 10px; font-size: .58rem; font-weight: 800; letter-spacing: 1px; color: #fff; text-transform: uppercase; }
+    .challenge-icon { font-size: 1.5rem; flex-shrink: 0; }
+    .challenge-body { flex: 1; text-align: left; }
+    .challenge-label { font-size: .58rem; font-weight: 800; letter-spacing: 1px; text-transform: uppercase; color: var(--primary); margin-bottom: 3px; }
+    .challenge-title { font-size: .88rem; color: var(--text); line-height: 1.4; font-weight: 400; }
+    .challenge-title .green { color: var(--primary); font-weight: 700; }
+
+    /* STATS */
+    .stats { display: flex; align-items: center; justify-content: center; font-size: .71rem; color: var(--muted); animation: fadeUp .7s .25s ease both; }
+
+    /* STICKY CTA */
+    .sticky-cta { position: fixed; bottom: 0; left: 0; right: 0; z-index: 999; padding: 12px 20px calc(12px + env(safe-area-inset-bottom)); background: linear-gradient(to top, rgba(255,255,255,1) 60%, rgba(255,255,255,0) 100%); transform: translateY(110%); transition: transform .3s ease; pointer-events: none; }
+    .sticky-cta.visible { transform: translateY(0); pointer-events: auto; }
+    .sticky-cta a { display: block; width: 100%; max-width: 400px; margin: 0 auto; padding: 16px; background: var(--primary); border-radius: 14px; font-size: 1.05rem; font-weight: 800; color: #fff; text-decoration: none; text-align: center; box-shadow: 0 6px 24px rgba(0,0,0,.4); animation: cta-pulse 3s ease-in-out infinite; }
+
+    @keyframes fadeUp { from { opacity: 0; transform: translateY(18px); } to { opacity: 1; transform: translateY(0); } }
+
+    @media (max-width: 360px) { .hero h1 { font-size: 1.75rem; } .counter-amount { font-size: 2.7rem; } .step-item { padding: 14px; gap: 10px; } }
+    @media (prefers-reduced-motion: reduce) { *, *::before, *::after { animation: none !important; transition: none !important; } }
+  </style>
+</head>
+<body>
+
+<div class="bg-layer" id="bgLayer"></div>
+
+<div class="page">
+  <div class="inner">
+
+    <div class="wordmark">
+      <div class="logo-icon">
+        <img src="https://img.icons8.com/color/512/shein.png" alt="Shein">
+      </div>
+    </div>
+
+    <div class="hero">
+      <h1>Get Started with <span class="hl">Shein Codes</span></h1>
+      <p>Complete simple tasks &amp; get your gift card instantly!</p>
+      <div class="badge">
+        <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
+        <span>Shein Gift Card — delivered directly to your inbox.</span>
+      </div>
+    </div>
+
+    <div class="value-counter">
+      <div class="counter-amount" id="counterAmount">$0.00</div>
+      <div class="counter-label">Instantly sent to you</div>
+      <div class="counter-bar-wrap">
+        <div class="counter-bar" id="counterBar"></div>
+      </div>
+    </div>
+
+    <!-- trxbutton: MaxConv controla o redirect -->
+    <a id="mainCta" class="cta-btn trxbutton" href="https://tk.unlockbonusapp.com/click">Claim Your Rewards →</a>
+
+    <div class="trust">
+      <span>No Credit Card</span>
+      <span>Quick &amp; Easy</span>
+      <span>Instant Rewards</span>
+    </div>
+
+    <div class="steps-card">
+      <div class="steps-title">How It Works</div>
+      <div class="step-item">
+        <div class="step-num">1</div>
+        <div class="step-body"><b>Tap "Claim Your Rewards"</b><span>Get started in seconds — no credit card needed.</span></div>
+      </div>
+      <div class="step-item">
+        <div class="step-num">2</div>
+        <div class="step-body"><b>Complete 2–5 quick deals</b><span>Unlock up to $750 in Shein Gift Card value.</span></div>
+      </div>
+      <div class="step-item">
+        <div class="step-num">3</div>
+        <div class="step-body"><b>Receive your Gift Card code</b><span>Delivered to your inbox — redeem on Shein anytime.</span></div>
+      </div>
+    </div>
+
+    <div class="challenge-banner">
+      <div class="ch-badge">⚠️ Important</div>
+      <div class="challenge-icon">🔓</div>
+      <div class="challenge-body">
+        <div class="challenge-label">Activation Required</div>
+        <div class="challenge-title">New users: Complete <span class="green">2 quick offers in a single day</span> to receive an additional Shein bonus rewards!</div>
+      </div>
+    </div>
+
+    <div class="stats">
+      <span>Secure &amp; Private</span>
+    </div>
+
+  </div>
+</div>
+
+<div class="sticky-cta" id="stickyCta">
+  <a id="stickyCta-btn" class="trxbutton" href="https://tk.unlockbonusapp.com/click">Claim Your Rewards →</a>
+</div>
+
+<script>
+// ─── PARTICLES ───────────────────────────────────────────────
+(function(){
+  var layer = document.getElementById('bgLayer');
+  var colors = ['#0a0a0a','#1a1a1a','#333333','#555555','#808080'];
+  for(var i=0;i<18;i++){
+    var p = document.createElement('div');
+    p.className = 'particle';
+    var sz = Math.random()*4+2;
+    p.style.cssText = 'width:'+sz+'px;height:'+sz+'px;left:'+Math.random()*100+'%;bottom:'+Math.random()*20+'%;background:'+colors[Math.floor(Math.random()*colors.length)]+';animation-duration:'+(Math.random()*10+8)+'s;animation-delay:'+(Math.random()*8)+'s;';
+    layer.appendChild(p);
+  }
+})();
+
+// ─── STICKY CTA ──────────────────────────────────────────────
+(function(){
+  var mainBtn   = document.getElementById('mainCta');
+  var stickyCta = document.getElementById('stickyCta');
+  var observer  = new IntersectionObserver(function(entries){
+    entries.forEach(function(e){
+      stickyCta.classList.toggle('visible', !e.isIntersecting);
+    });
+  }, { threshold: 0 });
+  observer.observe(mainBtn);
+})();
+
+// ─── COUNTER ANIMATION ───────────────────────────────────────
+(function(){
+  var target   = 750;
+  var duration = 2000;
+  var el  = document.getElementById('counterAmount');
+  var bar = document.getElementById('counterBar');
+  var start = performance.now();
+  function easeOut(t){ return 1 - Math.pow(1-t, 3); }
+  function tick(now){
+    var elapsed  = now - start;
+    var progress = Math.min(elapsed / duration, 1);
+    var eased    = easeOut(progress);
+    el.textContent  = '$' + (eased * target).toFixed(2);
+    bar.style.width = (eased * 100) + '%';
+    if(progress < 1) requestAnimationFrame(tick);
+    else { el.textContent = '$750.00'; bar.style.width = '100%'; }
+  }
+  setTimeout(function(){ requestAnimationFrame(tick); }, 400);
+})();
+
+// ─── HELPERS ─────────────────────────────────────────────────
+function makeId(){
+  return 'xxxxxxxx-xxxx-4xxx-yxxx-xxxxxxxxxxxx'.replace(/[xy]/g, function(c){
+    var r = Math.random()*16|0, v = c==='x' ? r : (r&0x3)|0x8;
+    return v.toString(16);
+  });
+}
+
+// ─── TIKTOK — ViewContent no load ────────────────────────────
+(function(){
+  try {
+    ttq.track('ViewContent', {
+      event_id:     makeId(),
+      content_type: 'lead',
+      content_id:   'shein-landing',
+      value:        0.5,
+      currency:     'USD'
+    });
+  } catch(e) {}
+})();
+
+// ─── TIKTOK — 5 eventos no clique (sem preventDefault) ───────
+// MaxConv (trxbutton + t.js) controla o redirect.
+(function(){
+  function firePixelEvents(){
+    var eventNames = ['AddToCart','CompleteRegistration','SubmitForm','ClickButton','Purchase'];
+    eventNames.forEach(function(ev){
+      try {
+        ttq.track(ev, {
+          event_id:     makeId(),
+          content_type: 'lead',
+          content_id:   'shein-cta',
+          value:        0.5,
+          currency:     'USD'
+        });
+      } catch(e) {}
+    });
+  }
+
+  document.addEventListener('DOMContentLoaded', function(){
+    var btns = [
+      document.getElementById('mainCta'),
+      document.getElementById('stickyCta-btn')
+    ];
+    btns.forEach(function(btn){
+      if(!btn) return;
+      btn.addEventListener('click', function(){
+        // SEM preventDefault — MaxConv faz o redirect via trxbutton
+        firePixelEvents();
+      });
+    });
+  });
+})();
+</script>
+
+<script defer src="https://static.cloudflareinsights.com/beacon.min.js/v833ccba57c9e4d2798f2e76cebdd09a11778172276447" integrity="sha512-57MDmcccJXYtNnH+ZiBwzC4jb2rvgVCEokYN+L/nLlmO8rfYT/gIpW2A569iJ/3b+0UEasghjuZH/ma3wIs/EQ==" data-cf-beacon='{"version":"2024.11.0","token":"026d1f61bbfb423a96f53124a981a0a5","r":1,"server_timing":{"name":{"cfCacheStatus":true,"cfEdge":true,"cfExtPri":true,"cfL4":true,"cfOrigin":true,"cfSpeedBrain":true},"location_startswith":null}}' crossorigin="anonymous"></script>
+
+<script defer src="https://static.cloudflareinsights.com/beacon.min.js/v4513226cdae34746b4dedf0b4dfa099e1781791509496" integrity="sha512-ZE9pZaUXND66v380QUtch/5sE9tPFh2zg45pR2PB0CVkCtOREv2AJKkSidISWkysEuQ0EH8faUU5du78bx87UQ==" data-cf-beacon='{"version":"2024.11.0","token":"026d1f61bbfb423a96f53124a981a0a5","r":1,"server_timing":{"name":{"cfCacheStatus":true,"cfEdge":true,"cfExtPri":true,"cfL4":true,"cfOrigin":true,"cfSpeedBrain":true},"location_startswith":null}}' crossorigin="anonymous"></script>
+<script defer src="https://static.cloudflareinsights.com/beacon.min.js/v4513226cdae34746b4dedf0b4dfa099e1781791509496" integrity="sha512-ZE9pZaUXND66v380QUtch/5sE9tPFh2zg45pR2PB0CVkCtOREv2AJKkSidISWkysEuQ0EH8faUU5du78bx87UQ==" data-cf-beacon='{"version":"2024.11.0","token":"026d1f61bbfb423a96f53124a981a0a5","r":1,"server_timing":{"name":{"cfCacheStatus":true,"cfEdge":true,"cfExtPri":true,"cfL4":true,"cfOrigin":true,"cfSpeedBrain":true},"location_startswith":null}}' crossorigin="anonymous"></script>
+</body>
+</html>
